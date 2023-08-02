@@ -147,6 +147,3 @@ console.log(values);
 const entries = Object.entries(japaneseRestaurant.workingHours)
 console.log(entries);
 
-for( let i = 0; i == entries.length; i++){
-    console.log(entries[i]);
-}
