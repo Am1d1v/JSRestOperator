@@ -30,6 +30,14 @@ const japaneseRestaurant = {
 const entries = Object.entries(japaneseRestaurant.workingHours);
 //console.log(entries);
 
+/*
+
 for(const entry of entries){
     console.log(entry[0], entry[1]);
+}
+
+*/
+
+for(const [name, hours] of entries){
+    console.log(name, hours);
 }
