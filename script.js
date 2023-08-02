@@ -16,6 +16,10 @@ const japaneseRestaurant = {
             open: 10,
             close: 23
         },
+        saturday: {
+            open: 12,
+            close: 23
+        },
         sunday: {
             open: 12,
             close: 23
@@ -35,7 +39,7 @@ const japaneseRestaurant = {
     }
 }
 
-// Spread Operator
+// Rest Operator with Arrays
 
 //const arr = [1, 2, ...[3,4]];
 //console.log(arr);
@@ -45,6 +49,29 @@ const japaneseRestaurant = {
 
 const [seaweed, , sushiRice, ...otherFood] = [...japaneseRestaurant.appetizers, ...japaneseRestaurant.mainMenu];
 console.log(seaweed, sushiRice, otherFood);
+
+
+// Rest Operator with Objects
+
+const {saturday, sunday, ...weekdays} = japaneseRestaurant.workingHours;
+console.log(weekdays);
+
+
+// Rest pattern with functions
+
+const sum = function(...nums){
+    
+    let sum = 0;
+
+    for(let i = 0; i < nums.length; i++){
+        sum += nums[i];
+    }
+    console.log(sum);
+}
+
+sum(1, 1);
+sum(1, 2, 3);
+
 
 /*
 
