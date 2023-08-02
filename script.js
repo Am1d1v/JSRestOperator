@@ -73,6 +73,10 @@ sum(1, 1);
 sum(1, 2, 3);
 
 
+const numbers = [11, 22, 33];
+
+sum(...numbers);
+
 /*
 
 japaneseRestaurant.foodDelivery({
