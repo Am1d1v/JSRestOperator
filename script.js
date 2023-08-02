@@ -134,3 +134,19 @@ japaneseRestaurantCopy.name = "New Restaurant Name";
 
 console.log(japaneseRestaurant.name);
 console.log(japaneseRestaurantCopy.name);
+
+
+
+for (const day of Object.keys(japaneseRestaurant.workingHours)){
+    console.log(day, japaneseRestaurant.workingHours[day]);
+};
+
+const values = Object.values(japaneseRestaurant.workingHours);
+console.log(values);
+
+const entries = Object.entries(japaneseRestaurant.workingHours)
+console.log(entries);
+
+for( let i = 0; i == entries.length; i++){
+    console.log(entries[i]);
+}
